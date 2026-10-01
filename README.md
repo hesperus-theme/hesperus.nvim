@@ -1,6 +1,7 @@
 # Hesperus Nvim
 
-A neovim theme inspired by Ranni color palette from Elden Ring
+### Screenshot
+![Screenshot previewing theme](./assets/screenshot1.png)
 
 <br></br>
 
@@ -9,7 +10,7 @@ A neovim theme inspired by Ranni color palette from Elden Ring
 #### Lazy:
 ```lua 
 {
-    "tachyonora/hesperus.nvim",
+    "hesperus-theme/hesperus.nvim",
     lazy = false,
     priority = 1000,
 }
