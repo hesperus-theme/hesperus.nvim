@@ -1,0 +1,41 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "keybindings":
+    [    ],
+    "profiles":
+    {
+        "defaults":
+        {
+            "colorScheme": "Hesperus",
+        }
+    },
+    "schemes":
+    [
+        {
+            "background": "#171c26",
+            "black": "#797c8c",
+            "blue": "#80b2d2",
+            "brightBlack": "#4c5059",
+            "brightBlue": "#1755a6",
+            "brightCyan": "#9ab6ce",
+            "brightGreen": "#707287",
+            "brightPurple": "#997ebf",
+            "brightRed": "#af331c",
+            "brightWhite": "#a6adc8",
+            "brightYellow": "#755443",
+            "cursorColor": "#e9ecfd",
+            "cyan": "#c7d7e8",
+            "foreground": "#dfe4f2",
+            "green": "#b4b6d9",
+            "name": "Hesperus",
+            "purple": "#b7add9",
+            "red": "#a51c1a",
+            "selectionBackground": "#2E41AC",
+            "white": "#e9ecfd",
+            "yellow": "#b39c8c"
+        }
+    ],
+    "themes": []
+}
