@@ -72,12 +72,16 @@ local function set_groups(colorscheme)
 		},
 		Substitute = { link = "IncSearch" },
 		CursorLineNr = { fg = colorscheme.syntaxFunction, bg = "NONE" },
-		MatchParen = { fg = colorscheme.mainText, bg = colorscheme.sidebarBackground },
+		MatchParen = { fg = colorscheme.editorBackground, bg = colorscheme.syntaxFunction },
 		ModeMsg = { link = "Normal" },
 		MsgArea = { link = "Normal" },
 		MoreMsg = { fg = colorscheme.syntaxFunction },
 		NonText = { fg = utils.shade(colorscheme.editorBackground, 0.30) },
-		NormalFloat = { bg = colorscheme.floatingWindowBackground },
+        NormalFloat = {
+            bg = config.transparent
+            and utils.shade(colorscheme.floatingWindowBackground, 0.5, "NONE")
+            or colorscheme.floatingWindowBackground,
+        },
 		FloatBorder = { fg = colorscheme.windowBorder },
 		FloatTitle = { fg = colorscheme.emphasisText, bold = true },
 		FloatFooter = { fg = colorscheme.inactiveText },
