@@ -6,12 +6,12 @@ local bg = (config.transparent and colorscheme.background_high) or colorscheme.b
 local M = {}
 
 M.normal = {
-	a = { bg = colorscheme.background_higher, fg = colorscheme.background },
-	b = { bg = colorscheme.background_high, fg = colorscheme.background_higher },
-	c = { bg = bg, fg = colorscheme.background_higher },
-	x = { bg = bg, fg = colorscheme.background_higher },
-	y = { bg = colorscheme.background_high, fg = colorscheme.background_higher },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.background_higher },
+	a = { bg = colorscheme.dark_grey, fg = colorscheme.background },
+	b = { bg = colorscheme.background_high, fg = colorscheme.dark_grey },
+	c = { bg = bg, fg = colorscheme.dark_grey },
+	x = { bg = bg, fg = colorscheme.dark_grey },
+	y = { bg = colorscheme.background_high, fg = colorscheme.dark_grey },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.dark_grey },
 }
 
 M.insert = {
@@ -20,7 +20,7 @@ M.insert = {
 	c = { bg = bg, fg = colorscheme.magenta_dark },
 	x = { bg = bg, fg = colorscheme.magenta_dark },
 	y = { bg = colorscheme.background_high, fg = colorscheme.magenta_dark },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.magenta_dark },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.magenta_dark },
 }
 
 M.terminal = {
@@ -29,7 +29,7 @@ M.terminal = {
 	c = { bg = bg, fg = colorscheme.ice_dark },
 	x = { bg = bg, fg = colorscheme.ice_dark },
 	y = { bg = colorscheme.background_high, fg = colorscheme.ice_dark },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.ice_dark },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.ice_dark },
 }
 
 M.command = {
@@ -38,7 +38,7 @@ M.command = {
 	c = { bg = bg, fg = colorscheme.brown },
 	x = { bg = bg, fg = colorscheme.brown },
 	y = { bg = colorscheme.background_high, fg = colorscheme.brown },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.brown },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.brown },
 }
 
 M.visual = {
@@ -47,7 +47,7 @@ M.visual = {
 	c = { bg = bg, fg = colorscheme.magenta },
 	x = { bg = bg, fg = colorscheme.magenta },
 	y = { bg = colorscheme.background_high, fg = colorscheme.magenta },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.magenta },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.magenta },
 }
 
 M.replace = {
@@ -56,7 +56,7 @@ M.replace = {
 	c = { bg = bg, fg = colorscheme.red },
 	x = { bg = bg, fg = colorscheme.red },
 	y = { bg = colorscheme.background_high, fg = colorscheme.red },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.red },
+	z = { bg = colorscheme.dark_grey, fg = colorscheme.red },
 }
 
 M.inactive = {
