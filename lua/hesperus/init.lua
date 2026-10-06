@@ -66,7 +66,7 @@ local function set_groups(colorscheme)
 		Added = { fg = colorscheme.ice_dark },
 		ErrorMsg = { fg = colorscheme.red },
 		VertSplit = { fg = colorscheme.background_low, bg = bg },
-		Winseparator = { link = "VertSplit" },
+		Winseparator = { fg = colorscheme.background, bg = bg },
 	    SnacksWinSeparator = { fg = "NONE", bg = "NONE" },
 		SignColumn = { link = "Normal" },
 		Folded = { fg = colorscheme.magenta, bg = colorscheme.background_higher },
