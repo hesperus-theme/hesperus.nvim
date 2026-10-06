@@ -7,8 +7,8 @@ local p = {
 
 	grey = "#566580",
 	dark_grey = "#2e3547",
-	red = "#a60f2b",
-	red_dark = "#730d1f",
+    red = "#d93240",
+	red_dark = "#a60f2b",
 	pink = "#efd8f2",
 	pink_dark = "#bd7ed9",
 	brown = "#b39c8c",
