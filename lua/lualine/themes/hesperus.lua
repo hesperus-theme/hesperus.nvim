@@ -6,12 +6,12 @@ local bg = (config.transparent and colorscheme.background_high) or colorscheme.b
 local M = {}
 
 M.normal = {
-	a = { bg = colorscheme.blue_dark, fg = colorscheme.background },
-	b = { bg = colorscheme.background_high, fg = colorscheme.blue_dark },
-	c = { bg = bg, fg = colorscheme.blue_dark },
-	x = { bg = bg, fg = colorscheme.blue_dark },
-	y = { bg = colorscheme.background_high, fg = colorscheme.blue_dark },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.blue_dark },
+	a = { bg = colorscheme.background_higher, fg = colorscheme.background },
+	b = { bg = colorscheme.background_high, fg = colorscheme.background_higher },
+	c = { bg = bg, fg = colorscheme.background_higher },
+	x = { bg = bg, fg = colorscheme.background_higher },
+	y = { bg = colorscheme.background_high, fg = colorscheme.background_higher },
+	z = { bg = colorscheme.background_higher, fg = colorscheme.background_higher },
 }
 
 M.insert = {
