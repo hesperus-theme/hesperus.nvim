@@ -1,94 +1,76 @@
 local p = {
-    c0 = "#dfe4f2",
-    c1 = "#171c26",
-    c2 = "#171c26",
-    c3 = "#dfe4f2",
-    c4 = "#797c8c",
-    c5 = "#a60f2b",
-    c6 = "#b4b6d9",
-    c7 = "#b39c8c",
-    c8 = "#80b2d2",
-    c9 = "#b7add9",
-    c10 = "#c7d7e8",
-    c11 = "#e9ecfd",
-    c12 = "#4c5059",
-    c13 = "#730d1f",
-    c14 = "#707287",
-    c15 = "#755443",
-    c16 = "#369adb",
-    c17 = "#997ebf",
-    c18 = "#9ab6ce",
-    c19 = "#a6adc8",
-    c20 = "#1f2533",
-    c21 = "#252b3a",
-    c22 = "#2e3547",
-    c23 = "#566580"
+	background_low = "#171c26",
+	background = "#1f2533",
+	background_high = "#252b3a",
+	background_higher = "#2e3547",
+	foreground = "#dfe4f2",
+
+	grey = "#566580",
+	dark_grey = "#2e3547",
+	red = "#a60f2b",
+	red_dark = "#730d1f",
+	pink = "#efd8f2",
+	pink_dark = "#bd7ed9",
+	brown = "#b39c8c",
+	brown_dark = "#755443",
+	blue = "#80b2d2",
+	blue_dark = "#369adb",
+	magenta = "#b7add9",
+	magenta_dark = "#997ebf",
+	ice = "#c7d7e8",
+	ice_dark = "#9ab6ce",
 }
 
 local M = {}
 
 function M.pick()
-    local colorscheme = {}
+	local colorscheme = {}
 
-    colorscheme.editorBackground = p.c1
-    colorscheme.sidebarBackground = p.c21
-    colorscheme.popupBackground = p.c22
-    colorscheme.floatingWindowBackground = p.c20
-    colorscheme.menuOptionBackground = p.c22
+	colorscheme.background_low = p.background_low
+	colorscheme.background = p.background
+	colorscheme.background_high = p.background_high
+	colorscheme.background_higher = p.background_higher
+	colorscheme.foreground = p.foreground
 
-    colorscheme.mainText = p.c0
-    colorscheme.emphasisText = p.c16
-    colorscheme.commandText = p.c8
-    colorscheme.inactiveText = p.c22
-    colorscheme.disabledText = p.c22
-    colorscheme.lineNumberText = p.c8
-    colorscheme.currentLineNumber = p.c0
-    colorscheme.selectedText = p.c1
-    colorscheme.inactiveSelectionText = p.c22
+	colorscheme.grey = p.grey
+	colorscheme.dark_grey = p.dark_grey
+	colorscheme.red = p.red
+	colorscheme.red_dark = p.red_dark
+	colorscheme.pink = p.pink
+	colorscheme.pink_dark = p.pink_dark
+	colorscheme.brown = p.brown
+	colorscheme.brown_dark = p.brown_dark
+	colorscheme.blue = p.blue
+	colorscheme.blue_dark = p.blue_dark
+	colorscheme.magenta = p.magenta
+	colorscheme.magenta_dark = p.magenta_dark
+	colorscheme.ice = p.ice
+	colorscheme.ice_dark = p.ice_dark
 
-    colorscheme.windowBorder = p.c22
-    colorscheme.focusedBorder = p.c8
-    colorscheme.emphasizedBorder = p.c6
+	colorscheme.terminal = {
+		black = p.grey,
+		red = p.red,
+		green = p.ice,
+		yellow = p.brown,
+		blue = p.blue,
+		magenta = p.magenta,
+		cyan = p.ice,
+		white = p.foreground,
 
-    colorscheme.syntaxError = p.c5
-    colorscheme.syntaxFunction = p.c9
-    colorscheme.warningText = p.c7
-    colorscheme.syntaxKeyword = p.c16
-    colorscheme.linkText = p.c8
-    colorscheme.stringText = p.c8
-    colorscheme.warningEmphasis = p.c7
-    colorscheme.successText = p.c18
-    colorscheme.errorText = p.c8
-    colorscheme.specialKeyword = p.c17
-    colorscheme.commentText = p.c23
-    colorscheme.syntaxOperator = p.c8
-    colorscheme.foregroundEmphasis = p.c7
-    colorscheme.terminalGray = p.c19
+		bright_black = p.grey,
+		bright_red = p.red_dark,
+		bright_green = p.pink,
+		bright_yellow = p.brown_dark,
+		bright_blue = p.blue_dark,
+		bright_magenta = p.pink_dark,
+		bright_cyan = p.ice_dark,
+		bright_white = p.foreground,
 
-    colorscheme.terminal = {
-        black = p.c4,
-        red = p.c5,
-        green = p.c6,
-        yellow = p.c7,
-        blue = p.c8,
-        magenta = p.c9,
-        cyan = p.c10,
-        white = p.c11,
+		background = p.background_low,
+		foreground = p.foreground,
+	}
 
-        bright_black = p.c12,
-        bright_red = p.c13,
-        bright_green = p.c14,
-        bright_yellow = p.c15,
-        bright_blue = p.c16,
-        bright_magenta = p.c17,
-        bright_cyan = p.c18,
-        bright_white = p.c19,
-
-        background = colorscheme.editorBackground,
-        foreground = colorscheme.mainText,
-    }
-
-    return colorscheme
+	return colorscheme
 end
 
 return M
