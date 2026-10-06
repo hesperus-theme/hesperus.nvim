@@ -40,7 +40,8 @@ local function set_groups(colorscheme)
 	local groups = {
 		Normal = { fg = colorscheme.foreground, bg = bg },
 		SnacksNormal = { fg = colorscheme.foreground, bg = bg },
-		SnacksPicker = { fg = colorscheme.foreground, bg = bg },
+		SnacksNormalNC = { fg = colorscheme.foreground, bg = bg },
+		SnacksPicker = { fg = colorscheme.foreground, bg = colorscheme.background_low },
 		LineNr = { fg = colorscheme.blue },
 		ColorColumn = {
 			bg = utils.shade(colorscheme.blue, 0.5, colorscheme.background_low),
