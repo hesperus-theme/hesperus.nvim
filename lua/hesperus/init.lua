@@ -169,7 +169,7 @@ local function set_groups(colorscheme)
 
 		Attribute = { link = "Character" },
 		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.brown },
+		Special = { fg = colorscheme.pink_dark },
 
 		SpecialChar = { fg = colorscheme.red },
 		Tag = { fg = colorscheme.ice },
