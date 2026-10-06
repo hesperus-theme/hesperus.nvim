@@ -85,9 +85,9 @@ local function set_groups(colorscheme)
 		NormalFloat = {
 			bg = config.transparent
 				and utils.shade(colorscheme.background, 0.5, "NONE")
-				or colorscheme.background_low,
+				or colorscheme.background_high,
 		},
-		FloatBorder = { fg = colorscheme.magenta_dark },
+		FloatBorder = { fg = colorscheme.blue },
 		FloatTitle = { fg = colorscheme.ice, bold = true },
 		FloatFooter = { fg = colorscheme.grey },
 		NormalNC = { link = "Normal" },
