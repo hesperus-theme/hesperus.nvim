@@ -31,7 +31,7 @@ local function set_terminal_colors(colorscheme)
 end
 
 local function set_groups(colorscheme)
-	local bg = config.transparent and "NONE" or colorscheme.background
+	local bg = config.transparent and "NONE" or colorscheme.background_low
 	local diff_add = utils.shade(colorscheme.ice_dark, 0.5, colorscheme.background_low)
 	local diff_delete = utils.shade(colorscheme.red, 0.5, colorscheme.background_low)
 	local diff_change = utils.shade(colorscheme.blue_dark, 0.5, colorscheme.background_low)
@@ -40,8 +40,8 @@ local function set_groups(colorscheme)
 	local groups = {
 		Normal = { fg = colorscheme.foreground, bg = bg },
 		SnacksNormal = { fg = colorscheme.foreground, bg = bg },
-		SnacksNormalNC = { fg = colorscheme.foreground, bg = colorscheme.background_low },
-		SnacksPicker = { fg = colorscheme.foreground, bg = colorscheme.background_low },
+		SnacksNormalNC = { fg = colorscheme.foreground, bg = colorscheme.background },
+		SnacksPicker = { fg = colorscheme.foreground, bg = colorscheme.background },
 		SnacksPickerBox = { fg = colorscheme.foreground, bg = bg },
 		LineNr = { fg = colorscheme.blue },
 		ColorColumn = {
