@@ -6,7 +6,7 @@ local bg = (config.transparent and colorscheme.background_high) or colorscheme.b
 local M = {}
 
 M.normal = {
-	a = { bg = colorscheme.blue_dark, fg = colorscheme.blue_dark, gui = "bold" },
+	a = { bg = colorscheme.blue_dark, fg = colorscheme.background },
 	b = { bg = colorscheme.background_high, fg = colorscheme.blue_dark },
 	c = { bg = bg, fg = colorscheme.blue_dark },
 	x = { bg = bg, fg = colorscheme.blue_dark },
@@ -15,7 +15,7 @@ M.normal = {
 }
 
 M.insert = {
-	a = { bg = colorscheme.magenta_dark, fg = colorscheme.magenta_dark, gui = "bold" },
+	a = { bg = colorscheme.magenta_dark, fg = colorscheme.magbackground },
 	b = { bg = colorscheme.background_high, fg = colorscheme.magenta_dark },
 	c = { bg = bg, fg = colorscheme.magenta_dark },
 	x = { bg = bg, fg = colorscheme.magenta_dark },
@@ -24,7 +24,7 @@ M.insert = {
 }
 
 M.terminal = {
-	a = { bg = colorscheme.ice_dark, fg = colorscheme.ice_dark, gui = "bold" },
+	a = { bg = colorscheme.ice_dark, fg = colorschemebackground },
 	b = { bg = colorscheme.background_high, fg = colorscheme.ice_dark },
 	c = { bg = bg, fg = colorscheme.ice_dark },
 	x = { bg = bg, fg = colorscheme.ice_dark },
@@ -33,7 +33,7 @@ M.terminal = {
 }
 
 M.command = {
-	a = { bg = colorscheme.brown, fg = colorscheme.brown, gui = "bold" },
+	a = { bg = colorscheme.brown, fg = colorschbackground },
 	b = { bg = colorscheme.background_high, fg = colorscheme.brown },
 	c = { bg = bg, fg = colorscheme.brown },
 	x = { bg = bg, fg = colorscheme.brown },
@@ -42,7 +42,7 @@ M.command = {
 }
 
 M.visual = {
-	a = { bg = colorscheme.magenta, fg = colorscheme.magenta, gui = "bold" },
+	a = { bg = colorscheme.magenta, fg = colorschembackground },
 	b = { bg = colorscheme.background_high, fg = colorscheme.magenta },
 	c = { bg = bg, fg = colorscheme.magenta },
 	x = { bg = bg, fg = colorscheme.magenta },
@@ -51,7 +51,7 @@ M.visual = {
 }
 
 M.replace = {
-	a = { bg = colorscheme.red, fg = colorscheme.red, gui = "bold" },
+	a = { bg = colorscheme.red, fg = colorsbackground },
 	b = { bg = colorscheme.background_high, fg = colorscheme.red },
 	c = { bg = bg, fg = colorscheme.red },
 	x = { bg = bg, fg = colorscheme.red },
