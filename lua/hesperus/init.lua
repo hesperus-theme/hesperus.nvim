@@ -146,7 +146,7 @@ local function set_groups(colorscheme)
 
 		Identifier = { fg = colorscheme.foreground },
 		Function = { fg = colorscheme.blue_dark },
-		Method = { fg = colorscheme.blue_dark },
+		Method = { fg = colorscheme.yellow_dark },
 		Property = { fg = colorscheme.ice_dark },
 		Field = { link = "Property" },
 		Parameter = { fg = colorscheme.foreground },
@@ -156,7 +156,7 @@ local function set_groups(colorscheme)
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.magenta },
+		Constant = { fg = colorscheme.yellow },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },

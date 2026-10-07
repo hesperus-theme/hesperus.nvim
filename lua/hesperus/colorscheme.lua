@@ -9,8 +9,8 @@ local p = {
 	dark_grey = "#2e3547",
     red = "#d93240",
 	red_dark = "#a60f2b",
-	pink = "#f2edaf",
-	pink_dark = "#f2cf92",
+	yellow = "#f2edaf",
+	yellow_dark = "#f2cf92",
 	brown = "#b39c8c",
 	brown_dark = "#755443",
 	blue = "#80b2d2",
@@ -36,8 +36,8 @@ function M.pick()
 	colorscheme.dark_grey = p.dark_grey
 	colorscheme.red = p.red
 	colorscheme.red_dark = p.red_dark
-	colorscheme.pink = p.pink
-	colorscheme.pink_dark = p.pink_dark
+	colorscheme.yellow = p.yellow
+	colorscheme.yellow_dark = p.yellow_dark
 	colorscheme.brown = p.brown
 	colorscheme.brown_dark = p.brown_dark
 	colorscheme.blue = p.blue
@@ -59,10 +59,10 @@ function M.pick()
 
 		bright_black = p.grey,
 		bright_red = p.red_dark,
-		bright_green = p.pink,
+		bright_green = p.yellow,
 		bright_yellow = p.brown_dark,
 		bright_blue = p.blue_dark,
-		bright_magenta = p.pink_dark,
+		bright_magenta = p.yellow_dark,
 		bright_cyan = p.ice_dark,
 		bright_white = p.foreground,
 
