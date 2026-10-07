@@ -156,7 +156,7 @@ local function set_groups(colorscheme)
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.red },
+		Constant = { fg = colorscheme.yellow },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },
