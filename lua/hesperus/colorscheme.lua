@@ -1,5 +1,5 @@
 local p = {
-	background_low = "#011826",
+	background_low = "#0e1319",
 	background = "#171c26",
 	background_high = "#252b3a",
 	background_higher = "#2e3547",
