@@ -1,6 +1,6 @@
 local p = {
-	background_low = "#171c26",
-	background = "#222733",
+	background_low = "#1e2026",
+	background = "#0f1426",
 	background_high = "#252b3a",
 	background_higher = "#2e3547",
 	foreground = "#dfe4f2",
