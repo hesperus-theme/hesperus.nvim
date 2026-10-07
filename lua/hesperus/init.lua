@@ -145,7 +145,7 @@ local function set_groups(colorscheme)
 		Float = { link = "Number" },
 
 		Identifier = { fg = colorscheme.foreground },
-		Function = { fg = colorscheme.blue},
+		Function = { fg = colorscheme.blue },
 		Method = { fg = colorscheme.yellow_dark },
 		Property = { fg = colorscheme.ice_dark },
 		Field = { link = "Property" },
