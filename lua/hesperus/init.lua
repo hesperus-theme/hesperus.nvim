@@ -169,7 +169,7 @@ local function set_groups(colorscheme)
 
 		Attribute = { link = "Character" },
 		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.pink_dark },
+		Special = { fg = colorscheme.yellow_dark },
 
 		SpecialChar = { fg = colorscheme.red },
 		Tag = { fg = colorscheme.ice },
@@ -250,7 +250,7 @@ local function set_groups(colorscheme)
 			italic = config.italics.variables or false,
 		},
 		["@variable.builtin"] = { fg = colorscheme.magenta_dark },
-		["@variable.member"] = { fg = colorscheme.pink },
+		["@variable.member"] = { fg = colorscheme.yellow },
 		["@variable.parameter"] = {
 			fg = colorscheme.foreground,
 			italic = config.italics.variables or false,
