@@ -47,7 +47,7 @@ local function set_groups(colorscheme)
 		Cursor = { fg = colorscheme.background_low, bg = colorscheme.foreground },
 		lCursor = { link = "Cursor" },
 		CursorIM = { link = "Cursor" },
-		CursorLine = { bg = utils.shade(colorscheme.magenta_dark, 0.056, colorscheme.background_higher) },
+		CursorLine = { bg = colorscheme.background_high },
 		CursorColumn = { link = "CursorLine" },
 		Directory = { fg = colorscheme.ice_dark },
 		DiffAdd = { bg = bg, fg = colorscheme.blue },
