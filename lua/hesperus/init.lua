@@ -12,7 +12,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_0 = t.black
 	vim.g.terminal_color_1 = t.red
 	vim.g.terminal_color_2 = t.green
-	vim.g.terminal_color_3 = t.yellow
+	vim.g.terminal_color_3 = t.lavender
 	vim.g.terminal_color_4 = t.blue
 	vim.g.terminal_color_5 = t.magenta
 	vim.g.terminal_color_6 = t.cyan
@@ -20,7 +20,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_8 = t.bright_black
 	vim.g.terminal_color_9 = t.bright_red
 	vim.g.terminal_color_10 = t.bright_green
-	vim.g.terminal_color_11 = t.bright_yellow
+	vim.g.terminal_color_11 = t.bright_lavender
 	vim.g.terminal_color_12 = t.bright_blue
 	vim.g.terminal_color_13 = t.bright_magenta
 	vim.g.terminal_color_14 = t.bright_cyan
@@ -32,10 +32,6 @@ end
 
 local function set_groups(colorscheme)
 	local bg = config.transparent and "NONE" or colorscheme.background_low
-	local diff_add = utils.shade(colorscheme.ice_dark, 0.5, colorscheme.background_low)
-	local diff_delete = utils.shade(colorscheme.red, 0.5, colorscheme.background_low)
-	local diff_change = utils.shade(colorscheme.blue_dark, 0.5, colorscheme.background_low)
-	local diff_text = utils.shade(colorscheme.brown, 0.5, colorscheme.background_low)
 
 	local groups = {
 		Normal = { fg = colorscheme.foreground, bg = bg },
@@ -54,10 +50,10 @@ local function set_groups(colorscheme)
 		CursorLine = { bg = utils.shade(colorscheme.magenta_dark, 0.056, colorscheme.background_higher) },
 		CursorColumn = { link = "CursorLine" },
 		Directory = { fg = colorscheme.ice_dark },
-		DiffAdd = { bg = bg, fg = diff_add },
-		DiffChange = { bg = bg, fg = diff_change },
-		DiffDelete = { bg = bg, fg = diff_delete },
-		DiffText = { bg = bg, fg = diff_text },
+		DiffAdd = { bg = bg, fg = colorscheme.blue },
+		DiffChange = { bg = bg, fg = colorscheme.magenta },
+		DiffDelete = { bg = bg, fg = colorscheme.red },
+		DiffText = { bg = bg, fg = colorscheme.ice },
 		EndOfBuffer = { fg = colorscheme.background_high },
 		TermCursor = { link = "Cursor" },
 		TermCursorNC = { link = "Cursor" },
@@ -146,7 +142,7 @@ local function set_groups(colorscheme)
 
 		Identifier = { fg = colorscheme.foreground },
 		Function = { fg = colorscheme.blue },
-		Method = { fg = colorscheme.yellow_dark },
+		Method = { fg = colorscheme.lavender_dark },
 		Property = { fg = colorscheme.ice_dark },
 		Field = { link = "Property" },
 		Parameter = { fg = colorscheme.foreground },
@@ -156,7 +152,7 @@ local function set_groups(colorscheme)
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.yellow },
+		Constant = { fg = colorscheme.lavender },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },
@@ -169,7 +165,7 @@ local function set_groups(colorscheme)
 
 		Attribute = { link = "Character" },
 		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.yellow_dark },
+		Special = { fg = colorscheme.lavender_dark },
 
 		SpecialChar = { fg = colorscheme.red },
 		Tag = { fg = colorscheme.ice },
@@ -221,7 +217,7 @@ local function set_groups(colorscheme)
 		["@punctuation.special"] = { fg = colorscheme.ice },
 		["@punctuation.separator.keyvalue"] = { fg = colorscheme.ice },
 
-		["@text.diff.add"] = { fg = colorscheme.ice_dark },
+		["@text.diff.add"] = { fg = colorscheme.blue },
 		["@text.diff.delete"] = { fg = colorscheme.red },
 
 		["@constant"] = { link = "Constant" },

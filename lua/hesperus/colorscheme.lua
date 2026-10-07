@@ -9,8 +9,8 @@ local p = {
 	dark_grey = "#2e3547",
     red = "#d93240",
 	red_dark = "#a60f2b",
-	yellow = "#9290c3",
-	yellow_dark = "#535c91",
+	lavender = "#9290c3",
+	lavender_dark = "#535c91",
 	brown = "#b39c8c",
 	brown_dark = "#755443",
 	blue = "#80b2d2",
@@ -36,8 +36,8 @@ function M.pick()
 	colorscheme.dark_grey = p.dark_grey
 	colorscheme.red = p.red
 	colorscheme.red_dark = p.red_dark
-	colorscheme.yellow = p.yellow
-	colorscheme.yellow_dark = p.yellow_dark
+	colorscheme.lavender = plavenderw
+	colorscheme.lavender_dark = p.lavender_dark
 	colorscheme.brown = p.brown
 	colorscheme.brown_dark = p.brown_dark
 	colorscheme.blue = p.blue
@@ -51,7 +51,7 @@ function M.pick()
 		black = p.grey,
 		red = p.red,
 		green = p.ice,
-		yellow = p.brown,
+		lavender = p.brown,
 		blue = p.blue,
 		magenta = p.magenta,
 		cyan = p.ice,
@@ -59,10 +59,10 @@ function M.pick()
 
 		bright_black = p.grey,
 		bright_red = p.red_dark,
-		bright_green = p.yellow,
-		bright_yellow = p.brown_dark,
+		bright_green = p.lavender,
+		bright_lavender = p.brown_dark,
 		bright_blue = p.blue_dark,
-		bright_magenta = p.yellow_dark,
+		bright_magenta = p.lavender_dark,
 		bright_cyan = p.ice_dark,
 		bright_white = p.foreground,
 
