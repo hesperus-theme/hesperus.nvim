@@ -1,7 +1,7 @@
 # Hesperus Nvim
 
 ### Screenshot
-![Screenshot previewing theme](./assets/screenshot1.png)
+![Screenshot previewing theme](./assets/screenshot.png)
 
 <br></br>
 
