@@ -31,8 +31,6 @@ or simply run:
 :colorscheme hesperus
 ```
 
-NOTE: This theme is not exclusive to Neovim! The `ports` folder contains one subfolder for each piece of software the colorscheme was already ported to.
-
 <br></br>
 
 #### Credits
