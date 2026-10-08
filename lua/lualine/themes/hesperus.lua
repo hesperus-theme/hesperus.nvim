@@ -15,12 +15,12 @@ M.normal = {
 }
 
 M.insert = {
-	a = { bg = colorscheme.magenta_dark, fg = colorscheme.background },
-	b = { bg = colorscheme.background_high, fg = colorscheme.magenta_dark },
-	c = { bg = bg, fg = colorscheme.magenta_dark },
-	x = { bg = bg, fg = colorscheme.magenta_dark },
-	y = { bg = colorscheme.background_high, fg = colorscheme.magenta_dark },
-	z = { bg = colorscheme.background_higher, fg = colorscheme.magenta_dark },
+	a = { bg = colorscheme.blue, fg = colorscheme.background },
+	b = { bg = colorscheme.background_high, fg = colorscheme.blue },
+	c = { bg = bg, fg = colorscheme.blue },
+	x = { bg = bg, fg = colorscheme.blue },
+	y = { bg = colorscheme.background_high, fg = colorscheme.blue },
+	z = { bg = colorscheme.background_higher, fg = colorscheme.blue },
 }
 
 M.terminal = {
