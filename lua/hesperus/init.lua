@@ -62,7 +62,7 @@ local function set_groups(colorscheme)
 		Added = { fg = colorscheme.ice_dark },
 		ErrorMsg = { fg = colorscheme.red },
 		VertSplit = { fg = colorscheme.background_low, bg = bg },
-		Winseparator = { fg = colorscheme.background_low, bg = bg },
+		Winseparator = { fg = colorscheme.background, bg = bg },
 		SnacksWinSeparator = { fg = "NONE", bg = "NONE" },
 		SignColumn = { link = "Normal" },
 		Folded = { fg = colorscheme.magenta, bg = colorscheme.background_higher },
@@ -78,11 +78,7 @@ local function set_groups(colorscheme)
 		MsgArea = { link = "Normal" },
 		MoreMsg = { fg = colorscheme.ice_dark },
 		NonText = { fg = utils.shade(colorscheme.background_low, 0.30) },
-		NormalFloat = {
-			bg = config.transparent
-				and utils.shade(colorscheme.background, 0.5, "NONE")
-				or colorscheme.background_high,
-		},
+		NormalFloat = { bg = colorscheme.background },
 		FloatBorder = { fg = colorscheme.background_higher },
 		FloatTitle = { fg = colorscheme.ice, bold = true },
 		FloatFooter = { fg = colorscheme.grey },
