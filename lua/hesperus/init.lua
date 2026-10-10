@@ -12,7 +12,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_0 = t.black
 	vim.g.terminal_color_1 = t.red
 	vim.g.terminal_color_2 = t.green
-	vim.g.terminal_color_3 = t.lavender
+	vim.g.terminal_color_3 = t.moon
 	vim.g.terminal_color_4 = t.blue
 	vim.g.terminal_color_5 = t.magenta
 	vim.g.terminal_color_6 = t.cyan
@@ -20,7 +20,7 @@ local function set_terminal_colors(colorscheme)
 	vim.g.terminal_color_8 = t.bright_black
 	vim.g.terminal_color_9 = t.bright_red
 	vim.g.terminal_color_10 = t.bright_green
-	vim.g.terminal_color_11 = t.bright_lavender
+	vim.g.terminal_color_11 = t.bright_moon
 	vim.g.terminal_color_12 = t.bright_blue
 	vim.g.terminal_color_13 = t.bright_magenta
 	vim.g.terminal_color_14 = t.bright_cyan
@@ -68,7 +68,7 @@ local function set_groups(colorscheme)
 		FoldColumn = { link = "SignColumn" },
 		IncSearch = {
 			bg = utils.mix(colorscheme.magenta, colorscheme.background_low, math.abs(0.30)),
-			fg = colorscheme.background_low,
+			fg = colorscheme.foreground,
 		},
 		Substitute = { link = "IncSearch" },
 		CursorLineNr = { fg = colorscheme.magenta, bold = true, bg = "NONE" },
@@ -137,7 +137,7 @@ local function set_groups(colorscheme)
 
 		Identifier = { fg = colorscheme.foreground },
 		Function = { fg = colorscheme.blue },
-		Method = { fg = colorscheme.lavender_dark },
+		Method = { fg = colorscheme.moon_dark },
 		Property = { fg = colorscheme.ice_dark },
 		Field = { link = "Property" },
 		Parameter = { fg = colorscheme.foreground },
@@ -147,7 +147,7 @@ local function set_groups(colorscheme)
 		Operator = { fg = colorscheme.blue },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
 		Exception = { fg = colorscheme.red },
-		Constant = { fg = colorscheme.lavender },
+		Constant = { fg = colorscheme.moon },
 
 		PreProc = { link = "Keyword" },
 		Define = { fg = colorscheme.magenta_dark },
@@ -160,7 +160,7 @@ local function set_groups(colorscheme)
 
 		Attribute = { link = "Character" },
 		Punctuation = { fg = colorscheme.brown },
-		Special = { fg = colorscheme.lavender_dark },
+		Special = { fg = colorscheme.moon_dark },
 
 		SpecialChar = { fg = colorscheme.red },
 		Tag = { fg = colorscheme.ice },
