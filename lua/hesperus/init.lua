@@ -241,7 +241,7 @@ local function set_groups(colorscheme)
 			italic = config.italics.variables or false,
 		},
 		["@variable.builtin"] = { fg = colorscheme.magenta_dark },
-		["@variable.member"] = { fg = colorscheme.blue },
+		["@variable.member"] = { fg = colorscheme.moon },
 		["@variable.parameter"] = {
 			fg = colorscheme.foreground,
 			italic = config.italics.variables or false,
