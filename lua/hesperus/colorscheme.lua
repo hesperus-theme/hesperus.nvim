@@ -36,7 +36,7 @@ function M.pick()
 	colorscheme.dark_grey = p.dark_grey
 	colorscheme.red = p.red
 	colorscheme.red_dark = p.red_dark
-	colorscheme.moon = moonw
+	colorscheme.moon = moon
 	colorscheme.moon_dark = p.moon_dark
 	colorscheme.brown = p.brown
 	colorscheme.brown_dark = p.brown_dark
