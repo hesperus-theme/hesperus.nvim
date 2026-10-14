@@ -107,7 +107,7 @@ local function set_groups(colorscheme)
 			bg = colorscheme.background_low,
 			fg = colorscheme.ice,
 		},
-		CurSearch = { bg = utils.shade(colorscheme.magenta, 0.60, colorscheme.background_low), fg = colorscheme.background_low },
+		CurSearch = { bg = utils.shade(colorscheme.magenta, 0.40, colorscheme.background_low) },
 		Search = { bg = utils.shade(colorscheme.magenta, 0.40, colorscheme.background_low) },
 		SpellBad = { undercurl = true, sp = colorscheme.red },
 		SpellCap = { undercurl = true, sp = colorscheme.ice_dark },
